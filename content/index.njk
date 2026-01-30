@@ -1,0 +1,9 @@
+---
+layout: base.njk
+title: Characters
+---
+<ul>
+{%- for post in collections.characters -%}
+  <li><a href="{{ post.url }}">{{ post.data.fullname }}</a></li>
+{%- endfor -%}
+</ul>

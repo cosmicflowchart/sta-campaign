@@ -3,6 +3,7 @@ tags:
   - characters
   - foucault
 layout: character.njk
+title: LT Willis, MD
 fullname: Bennedict "Ben" Willis
 surname: Willis
 academic_degree: MD
