@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ rank_short }} {{ surname }}{% if academic_degree %}, {{ academic_degree }} {% endif %}</title>
+  </head>
+  <body>
+    <img src="/images/{{ image }}"/>
+    <h1>{{ rank }} {{ fullname }}{% if academic_degree %}, {{ academic_degree }} {% endif %}</h1>
+    <p>
+        {{ role }} of {{ assignment }}
+    </p>
+    <p>
+        {{ species }} ({{ pronouns }})
+    </p>
+    <p>
+        {{ character_type }} {% if player %} played by {{ player }} {% endif %}
+    </p>
+
+    {{ content | safe }}
+  </body>
+</html>
